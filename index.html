@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Noreen B. Tolentino, an aspiring front-end and UI/UX developer and BS Information Technology student.">
+  <title>Noreen B. Tolentino | Portfolio</title>
+
+  <!-- Simple built-in favicon so the browser does not request a missing file -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23b0446b'/%3E%3C/svg%3E">
+
+  <!-- Fonts: Bricolage Grotesque for headings, Public Sans for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Public+Sans:wght@400;500;600&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Loaded in the head so the saved theme is applied before the page paints -->
+  <script src="script.js"></script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- 1. Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Noreen B. Tolentino</a>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Dark / light mode toggle -->
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to dark mode">
+          <svg class="icon icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+          </svg>
+          <svg class="icon icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+        </button>
+
+        <!-- Hamburger button (only visible on small screens) -->
+        <button id="menu-toggle" class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path class="icon-bars" d="M4 7h16M4 12h16M4 17h16"/>
+            <path class="icon-close" d="M6 6l12 12M18 6L6 18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Thin bar that fills as the page is scrolled (CSS only, hidden in unsupported browsers) -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+
+    <!-- 2. Hero / About Me -->
+    <section id="about" class="about" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 id="hero-title">Hi, I'm <span class="hero-name">Noreen B. Tolentino</span></h1>
+          <p class="hero-role">
+            <span class="visually-hidden">Aspiring Front-End and UI/UX Developer</span>
+            <span aria-hidden="true">Aspiring <span id="role-text">Front-End Developer</span><span class="role-cursor"></span></span>
+          </p>
+          <p class="hero-intro">I design and build clean, easy-to-use interfaces. This portfolio shows my skills, projects, and certifications so far.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-outline" href="#projects">View my work</a>
+          </div>
+          <ul class="hero-stats" aria-label="Portfolio summary">
+            <li><strong>5</strong><span>Technologies</span></li>
+            <li><strong>5</strong><span>Tools</span></li>
+            <li><strong>2</strong><span>Certifications</span></li>
+          </ul>
+        </div>
+
+        <figure class="portrait">
+          <img src="images/Formal Picture.png" alt="Portrait of Noreen B. Tolentino" width="640" height="800">
+          <figcaption>
+            <div>
+              <span class="portrait-name">Hello-Hello-Hello-Hello-Hello-Hello-Hello-Hello</span>
+              <span class="portrait-status">BSIT student</span>
+            </div>
+            <a class="portrait-link" href="#contact">Contact</a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="container about-detail">
+        <div class="about-bio reveal">
+          <h2>About me</h2>
+          <p>I am a Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University, aiming for a career in front-end development or UI/UX design.</p>
+          <p>I design interfaces in Figma and build them with HTML, CSS, JavaScript, and React. I also work with Java in NetBeans, and I use Git and GitHub to manage my projects.</p>
+        </div>
+
+        <div class="about-facts reveal">
+          <dl>
+            <div>
+              <dt>Education</dt>
+              <dd>Bachelor of Science in Information Technology, Major in Web and Mobile Application Development, Bulacan State University</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Front-end development and UI/UX design</dd>
+            </div>
+            <div>
+              <dt>Languages and frameworks</dt>
+              <dd>
+                <ul class="tag-list" aria-label="Languages and frameworks">
+                  <li>Java</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>
+                <ul class="tag-list" aria-label="Tools">
+                  <li>Figma</li>
+                  <li>VS Code</li>
+                  <li>NetBeans</li>
+                  <li>Git</li>
+                  <li>GitHub</li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Projects -->
+    <section id="projects" class="section section-alt" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2 id="projects-title">Projects</h2>
+          <p class="section-lead">A selection of what I've built.</p>
+        </div>
+
+        <div class="project-grid">
+          <!-- To add another project, copy the whole <article> block below and paste it right after it. -->
+          <article class="project-card reveal">
+            <p class="project-type">Website</p>
+            <h3>Personal portfolio</h3>
+            <p>A responsive single-page portfolio built from scratch with HTML, CSS, and JavaScript. It includes a mobile menu, smooth scrolling, a dark and light mode toggle, and an enlarged view for my certificates.</p>
+            <ul class="tag-list" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <p class="project-course">Personal project</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications (extra section, images are enlarged with JavaScript) -->
+    <section id="certifications" class="section" aria-labelledby="certifications-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2 id="certifications-title">Certifications</h2>
+          <p class="section-lead">Select a certificate to view it larger.</p>
+        </div>
+
+        <div class="cert-grid">
+          <figure class="cert reveal">
+            <button class="cert-button" type="button" aria-label="View Certificate larger">
+              <img src="images/AI Alamin.png" alt="" width="1200" height="850" loading="lazy">
+            </button>
+            <figcaption>
+              <strong></strong>
+              <span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="cert reveal">
+            <button class="cert-button" type="button" aria-label="View Certificate larger">
+              <img src="images/AgentBlazer.jpg" alt="" width="1200" height="850" loading="lazy">
+            </button>
+            <figcaption>
+              <strong></strong>
+              <span></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Enlarged certificate viewer (opened by script.js) -->
+  <dialog id="cert-dialog" class="cert-dialog" aria-label="Certificate preview">
+    <button id="cert-dialog-close" class="dialog-close" type="button" aria-label="Close preview">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18"/>
+      </svg>
+    </button>
+    <img id="cert-dialog-img" src="images/certificate-1.jpg" alt="Enlarged certificate">
+  </dialog>
+
+  <!-- 4. Footer / Contact -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-intro reveal">
+        <h2>Contact</h2>
+        <p class="section-lead">Have a question, feedback, or an opportunity to discuss? Send me an email or message me on any of these.</p>
+      </div>
+
+      <ul class="contact-list reveal">
+        <li>
+          <span class="contact-label">Email</span>
+          <a href="mailto:yourname@email.com">----@email.com</a>
+        </li>
+        <li>
+          <span class="contact-label">GitHub</span>
+          <a href="https://github.com/----" target="_blank" rel="noopener">github.com/----</a>
+        </li>
+        <li>
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/----" target="_blank" rel="noopener">linkedin.com/in/----</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year">2026</span> Noreen B. Tolentino. Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>
