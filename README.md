@@ -2,5 +2,6 @@
 
 This is my personal portfolio website built with HTML, CSS, and JavaScript.
 
-## 🔗 Links
-* *Live Site:* 
+## Link
+ Live Site: https://noreentolentino.github.io/my-portfolio/
+
